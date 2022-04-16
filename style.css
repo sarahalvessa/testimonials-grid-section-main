@@ -1,0 +1,252 @@
+body{
+    width: 80%;
+    margin:20px auto;
+    font-family: sans-serif;
+    background-color:hsl(210, 46%, 95%);
+
+  }
+
+  #display{
+    display: grid;
+    grid-auto-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .main-content{
+      border-radius: 10px;
+      padding: 20px;
+
+    }
+
+    .main-content img{
+      height: 30px;
+      border-radius:16px;
+      border: 2px solid white;
+    }
+
+    .main-content h1 {
+      margin-left: 40px;
+      margin-top: -30px;
+      font-size: 12px;
+    }
+
+    .main-content h2{
+      margin-left: 40px;
+      margin-top: -10px;
+     font-size: 11px;
+    }
+
+
+  .content1{
+    background-color: hsl(263, 55%, 52%);
+    height: 400px;
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    background-image: url(bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      background-position: 70% 0%;
+  }
+
+  .content1 h1{
+      color: rgba(255, 255, 255, 0.856);
+  }
+
+  .content1 h2{
+      color: rgba(255, 255, 255, 0.507);
+  }
+
+
+  .content1 h3{
+    color: hsl(0, 0%, 100%);
+  }
+
+  .content1 p{
+      color:rgba(255, 255, 255, 0.699);
+      font-size: 14px;
+    }
+
+  .content2{
+    background-color:hsla(217, 30%, 14%, 0.822);
+    height: 220px;
+    grid-column:1 / 1 ;
+    grid-row: 2 / 3;
+  }
+
+  .content2 h1{
+      color: rgba(255, 255, 255, 0.856);
+    }
+
+    .content2 h2{
+      color: rgba(255, 255, 255, 0.507);
+    }
+
+    .content2 h3{
+      color: white;
+      font-size: 18px;
+
+    }
+
+    .content2 p{
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.507);
+    }
+
+  .content3{
+    background-color: white;
+    grid-column: 1 / 1;
+    grid-row: 3 / 4;
+  }
+
+  .content3 h1{
+      color: black;
+    }
+
+    .content3 h2{
+      color: gray;
+    }
+
+    .content3 h3{
+      color: black;
+    }
+
+    .content3 p{
+      color: gray;
+    }
+
+    .content4{
+      background-color:hsl(219, 29%, 14%);
+      
+    }
+
+    .content4 h1{
+      color: rgba(255, 255, 255, 0.856);
+    }
+
+    .content4 h2{
+      color: rgba(255, 255, 255, 0.507);
+    }
+
+    .content4 h3{
+      color: white;
+      font-size: 15px;
+    }
+
+    .content4 p{
+    color: rgba(255, 255, 255, 0.507);
+      font-size: 12px;
+    }
+
+    .content4 img{
+      border: 2px solid hsl(228, 45%, 44%);
+    }
+
+    .content5{
+      background-color: white;
+    }
+
+    .content5 h1{
+      color: black;
+    }
+
+    .content5 h2{
+      color:gray;
+    }
+
+    .content5 h3{
+      color: black;
+      font-size: 15px;
+    }
+
+    .content5 p{
+      color: rgb(148, 148, 148);
+      font-size: 12px;
+    }
+
+    @media (min-width:1000px){
+      #display{
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'content1 content1 content2 content5'
+        'content3 content4 content4 content5';
+      }
+
+    .content1{
+      grid-area: content1;
+      height: 220px;
+      background-image: url(bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      background-position: 70% 0%;
+      }
+
+    .content1 h1{
+      color: rgba(255, 255, 255, 0.856);
+    }
+
+    .content1 h2{
+      color: rgba(255, 255, 255, 0.507);
+    }
+
+    .content1 h3{
+      color: rgba(255, 255, 255, 0.979);
+      font-size: 15px;
+    }
+
+    .content1 p{
+      color: rgb(180, 178, 178);
+      font-size: 11px;
+    }
+
+    .content2{
+      grid-area: content2;
+      
+    }
+
+    .content2 h3{
+      color: rgba(255, 255, 255, 0.979);
+      font-size: 15px;
+    }
+
+    .content2 p{
+      font-size: 10px;
+    }
+
+    .content5{
+      grid-area: content5;
+    }
+
+    .content5 h3{
+      font-size: 15px;
+    }
+
+    .content5 p{
+      font-size: 10px;
+    }
+
+    .content3{
+      grid-area:content3;
+    }
+
+    .content3 p{
+      font-size: 10px;
+    }
+
+    .content3 h3{
+      font-size: 15px;
+    }
+
+    .content4{
+      grid-area: content4;
+    }
+
+    .content4 p{
+      font-size: 10px;
+    }
+
+    .content4 h3{
+      color: rgba(255, 255, 255, 0.979);
+      font-size: 15px;
+    }
+    }
